@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>Школьное Расписание 2026</title>
+    <link rel="stylesheet" href="./stylee.css">
+</head>
+<body class="schedule-bg">
+
+<div class="container">
+    <div class="header-nav">
+        <a href="./index.html" class="btn link-btn">← На главную</a>
+    </div>
+
+    <h1>Расписание занятий</h1>
+
+    <div id="step1">
+        <div class="grid-container">
+            <button class="btn p-btn" onclick="showClasses(5)">5 классы</button>
+            <button class="btn p-btn" onclick="showClasses(6)">6 классы</button>
+            <button class="btn p-btn" onclick="showClasses(7)">7 классы</button>
+            <button class="btn p-btn" onclick="showClasses(8)">8 классы</button>
+            <button class="btn p-btn" onclick="showClasses(9)">9 классы</button>
+            <button class="btn p-btn" onclick="showClasses(10)">10 классы</button>
+            <button class="btn p-btn" onclick="showClasses(11)">11 классы</button>
+        </div>
+    </div>
+
+    <div id="step2" class="hidden">
+        <div class="navigation-panel">
+            <button class="btn back-btn" onclick="goBack(1)">← К параллелям</button>
+        </div>
+        <h2 id="parallel-label">Выберите класс</h2>
+        <div id="class-buttons" class="grid-container"></div>
+    </div>
+
+    <div id="step3" class="hidden">
+        <div class="navigation-panel">
+            <button class="btn back-btn" onclick="goBack(2)">← К выбору класса</button>
+        </div>
+        
+        <h2 id="current-class-label"></h2>
+        
+        <div id="schedule-container" class="schedule-container"></div>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

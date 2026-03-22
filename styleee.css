@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.hidden { display: none; }
+
+.btn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.holiday-btn {
+    background: linear-gradient(135deg, #ff8c00, #ffae42);
+    color: white;
+    width: 100%;
+    font-size: 1.1em;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+}
+
+.holiday-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4); }
+
+.back-btn {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 20px;
+}
+
+.holiday-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: left;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.holiday-list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.holiday-name { color: #333; font-weight: 600; }
+.holiday-date { color: #ff8c00; font-weight: bold; }
+
+.holiday-note {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 20px;
+}
