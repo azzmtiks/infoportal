@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание — Школа в сети</title>
+    <link rel="stylesheet" href="./styleee.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+<div id="main-step" class="container">
+    <button class="btn holiday-btn" onclick="showHolidays()">📅 Расписание каникул</button>
+    
+    <a href="index.html" class="btn home-link-btn">🏠 Вернуться на главную</a>
+</div>
+
+<div id="step4" class="hidden container">
+    <h2 id="holiday-title"></h2>
+    <div id="holiday-content" class="holiday-card"></div>
+    <p class="holiday-note" id="holiday-note"></p>
+    
+    <button class="btn back-btn" onclick="goHome()">⬅ Назад к выбору</button>
+</div>
+
+</body>
+</html>
